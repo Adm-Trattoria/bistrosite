@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
 
 body {
+    font-family: "Baskervville SC", serif;
     margin: 0;
 }
 
@@ -39,6 +40,41 @@ body {
         }
     }
 }
+
+/* MENU ATIVADO */
+.drop {
+    display: block;
+
+    height: 15vh;
+    width: 5vw;
+
+    margin-top: -10px;
+    margin-left: -200px;
+
+    flex-direction: column;
+    position: absolute;
+    transition: 1.5s ease-in;
+}
+
+.active {
+    transition: 1.5s ease-out;
+    margin-left: 2vw; 
+}
+
+.drop-text {
+    font: unset;
+    font-weight: 800;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.drop-text:hover {
+    transition: .3s ease;
+    color: blue;
+}
+
 
 /* TELA INICIAL COM TITULO E SUBTITULO */
 .home-div {
