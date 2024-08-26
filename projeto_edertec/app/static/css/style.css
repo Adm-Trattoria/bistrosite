@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+body {
+    margin: 0;
+}
+
+/* CABEÇALHO, BOTAO DE MENU */
+.menu-ativador {
+    width: 30px;
+    height: 20px;
+    margin: 2vw;
+    #lancador {
+        position: absolute;
+        left: -9999px;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;  
+        cursor: pointer;
+    }
+    .menu-ativador-linha {
+        height: 2px;
+        background-color: #000;
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+        transition: all 0.3s;
+    }
+    #lancador:checked ~ label .menu-ativador-linha {
+        &:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        }
+        &:nth-child(2) {
+        opacity: 0;
+        }
+        &:nth-child(3) {
+        transform: translateY(-9px)rotate(-45deg);
+        }
+    }
+}
+
+/* TELA INICIAL COM TITULO E SUBTITULO */
+.home-div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0px;
+
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-size: calc(3vh + 3vw);
+}
+
+.sub-title {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: calc(2vh + 1.5vw);
+    font-weight: 400;
+
+    padding-bottom: 20vh;
+}
