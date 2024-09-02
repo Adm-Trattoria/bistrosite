@@ -79,7 +79,7 @@ header{
     height: 15vh;
     width: 5vw;
 
-    margin-top: -10px;
+    margin-top: -20px;
     margin-left: -200px;
 
     flex-direction: column;
@@ -136,6 +136,41 @@ header{
 
     font-size: calc(2vh + 1.5vw);
     font-weight: 400;
+}
+
+.btn-compra {
+    color: #e5bd86;
+
+    margin: 0;
+    font-size: calc(1vh + 1vw);
+    font-weight: 400;
+}
+
+.div-compra {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    padding: 6vh 0 1vh 0;
+}
+
+.colchete_esq {
+    rotate: 180deg;
+}
+
+.colchete {
+    width: 3vh;
+}
+
+.data {
+    color: #e5bd86;
+    font-size: calc(1vh + 1vw);
+    font-weight: 400;
+
+    margin: 0;
+    text-align: center;
 
     padding-bottom: 30vh;
 }
