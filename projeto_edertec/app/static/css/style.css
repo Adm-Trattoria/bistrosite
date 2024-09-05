@@ -139,11 +139,13 @@ header{
 }
 
 .btn-compra {
-    color: #e5bd86;
+    color: #be8343;
 
     margin: 0;
     font-size: calc(1vh + 1vw);
     font-weight: 400;
+
+    cursor: pointer;
 }
 
 .div-compra {
@@ -162,6 +164,8 @@ header{
 
 .colchete {
     width: 3vh;
+
+    cursor: pointer;
 }
 
 .data {
@@ -179,10 +183,89 @@ header{
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    height: 240vh;
 
     background: rgb(2,20,10);
-    background: linear-gradient(0deg, rgba(2,20,10,1) 80%, rgba(67,65,16,0) 100%);
+    background: linear-gradient(0deg, rgba(2,20,10,1) 90%, rgba(67,65,16,0) 100%);
 
-    margin-top: -15vh;
+    margin-top: -20vh;
+}
+
+.cardapio { 
+    margin: 0px;
+    margin-top: 40vh;
+
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-size: calc(3vh + 3vw);
+
+    align-self: center;
+}
+
+.prato {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    justify-content: center;
+
+    margin: 8vw 10vw 0 10vw;
+}
+
+.texto-prato{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.texto-prato-inv{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+}
+
+.title-prato {
+    font-size: calc(2vh + 1.5vw);
+
+    color: antiquewhite;
+
+    margin: 0;
+}
+
+.info-prato {
+    font-size: calc(1vh + 1vw);
+    font-weight: 400;
+
+    text-align: justify;
+
+    width: 90%;
+
+    color: antiquewhite;
+}
+
+.div_img_prato {
+    display: flex;
+
+    justify-content: end;
+    align-items: center;
+
+}
+
+.div_img_prato_inv {
+    display: flex;
+    align-items: center;
+
+}
+
+.img_churrasco {
+    width: 90%;
+    height: auto;
+}
+
+.ingred {
+    font-size: calc(1vh + .5vw);
+    font-weight: 400;
+
+    color: antiquewhite;
 }
