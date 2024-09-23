@@ -33,38 +33,18 @@ header{
     padding: 2vw;
 }
 
-.menu-ativador {
-    width: 15px;
-    height: 18px;
-    #lancador {
-        position: absolute;
-        left: -9999px;
-    }
-    label {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;  
-        cursor: pointer;
-    }
-    .menu-ativador-linha {
-        height: 1px;
-        background-color: #e5bd86;
-        opacity: 1;
-        transform: translateY(0) rotate(0);
-        transition: all 0.3s;
-    }
-    #lancador:checked ~ label .menu-ativador-linha {
-        &:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-        }
-        &:nth-child(2) {
-        opacity: 0;
-        }
-        &:nth-child(3) {
-        transform: translateY(-9px)rotate(-45deg);
-        }
-    }
+.menu-barras {
+    width: 4vh;
+    transition: .8s ease;
+}
+
+.menu-barras:hover {
+    width: 4.5vh;
+    filter: brightness(120%);
+}
+
+.menu-active {
+    transform: scaleX(-1);
 }
 
 .imagem_usuario{

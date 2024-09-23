@@ -8,14 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="menu-ativador">
-            <input onclick="onClick()" type="checkbox" id="lancador" />
-            <label for="lancador">
-              <span class="menu-ativador-linha"></span>
-              <span class="menu-ativador-linha"></span>
-              <span class="menu-ativador-linha"></span>
-            </label>
-        </div>
+        
+        <img src="../static/img/barras.svg" alt="menu-barras" id="menu-barras" class="menu-barras" onclick="onClick()">
 
         <div class="usuario">
             <a href=""><img src="../static/img/usuario.svg" class="imagem_usuario" alt="pagina_usuario"></a>
@@ -101,21 +95,30 @@
         </div>
     </div>
 
+    <div class="container3">
+        
+    </div>
+
 </body>
 
 <script>
     
     var anchor = 0
+    var menu = document.getElementById('menu-barras')
     var drop = document.getElementById('drop')
 
     function onClick(){
     if (anchor==0){
         anchor = 1
         drop.classList.add("active")
+
+        menu.classList.add("menu-active")
     }
     else {
         anchor = 0
         drop.classList.remove("active")
+
+        menu.classList.remove("menu-active")
     }
 }
     
